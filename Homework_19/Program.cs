@@ -11,69 +11,32 @@ namespace homework
         {
             Console.WriteLine(word);
         }
+
+
         static void Main()
         {
-            Print("Является ли пятизначное число палиндромом.");
-            Print("Введите пятизначное число:");
-            
-          int Num = 12821;
-            // if (numberA = numberB && numberX = numberY)
-            // {
-            //     Print("Нет");
-            // }
-            // {
-            //     Print("Да");
-            // }
+            Print("Введите пятизначное число");
 
-            firstDigit(Num);
-            static void firstDigit(int numberB)
-            {
-                if (numberB > 10000)
-                    numberB = numberB/10000 % 10;
-                Console.WriteLine(numberB);
-            }
-            
-            fiveDigit(Num);
-            static void fiveDigit(int numberA)
-            {
-                if (numberA > 10000)
-                    numberA = numberA / 1 % 10;
-                
-                Console.WriteLine(numberA);
+            string num = Console.ReadLine();
 
+            for (int i = num.Length -1; i > -1; --i)
+            {
+                Console.Write(num[i]);
             }
 
-            secondDigit(Num);
-            static void secondDigit(int numberX)
+            if (num[0] == num[4] && num[1] == num[3])
             {
-                if (numberX > 10000)
-                    numberX = numberX / 1000 % 10;
-                Console.WriteLine(numberX);
+                Print("\nЧисло падиндром");
             }
-
-            fourDigit(Num);
-            static void fourDigit(int numberY)
+            else
             {
-                if (numberY > 10000)
-                    numberY = numberY / 10 % 10;
-                
-                Console.WriteLine(numberY);
-
+                Print("\nЧисло не падиндром");
             }
-
-        
-
-            
-
-
-
-
-            
-            
-
         }
-
     }
 
 }
+
+
+
 
