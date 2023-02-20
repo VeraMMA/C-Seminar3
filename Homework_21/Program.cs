@@ -31,19 +31,11 @@ namespace homework
             int za = Convert.ToInt32(Console.ReadLine());
                
 
-            
-        //    static void ( Double AB, int xb, int xa, int yb, int ya, int zb, int za);
-            {
              Double AB = Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya,2) + Math.Pow(zb - za, 2));
              System.Console.WriteLine(AB);
-            }    
+              
         }
-        // A (3,6,8); B (2,1,-7), -> 15.84
-
-        // A (7,-5, 0); B (1,-1,9) -> 11.53
-        //  A(0, -3, 3) и B(3, 1, 3).
-
-         
+        
 
     }
 
