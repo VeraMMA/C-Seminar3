@@ -1,7 +1,4 @@
-﻿// Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-
-// 14212 -> нет      // 12821 -> да    // 23432 -> да
-using System;
+﻿using System;
 
 namespace homework
 {
@@ -12,25 +9,24 @@ namespace homework
             Console.WriteLine(word);
         }
 
-
         static void Main()
-        {
-            Print("Введите пятизначное число");
+        {   Print("Проверить является ли пятизначное число падиндромом");
+            Print("Введите пятизначное число: ");
 
-            string num = Console.ReadLine();
+            string digit = Console.ReadLine();
 
-            for (int i = num.Length -1; i > -1; --i)
+            for (int i = digit.Length -1; i > -1; --i)
             {
-                Console.Write(num[i]);
+                Console.Write(digit[i]);
             }
 
-            if (num[0] == num[4] && num[1] == num[3])
+            if (digit[0] == digit[4] && digit[1] == digit[3])
             {
-                Print("\nЧисло падиндром");
+                Print("\n Число является палиндромом");
             }
             else
             {
-                Print("\nЧисло не падиндром");
+                Print("\n Число не является падиндромом");
             }
         }
     }
