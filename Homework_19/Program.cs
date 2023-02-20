@@ -4,27 +4,76 @@
 using System;
 
 namespace homework
-{    class Program
+{
+    class Program
     {
-        static void Main()
+        public static void Print(string word)
         {
-           Print("Проверить является ли пятизначное число палиндромом:");
-           Print("Введите пятизначное число:");
-           Digit(12821);
-        }
-        public static void Print(string word){
             Console.WriteLine(word);
         }
-          
-        static void Digit (int numberA)
+        static void Main()
         {
+            Print("Является ли пятизначное число палиндромом.");
+            Print("Введите пятизначное число:");
             
-            if(numberA > 99 && numberA < 1000)
-              numberA = numberA / 10 % 10;
-            Console.WriteLine(numberA);
+          int Num = 12821;
+            // if (numberA = numberB && numberX = numberY)
+            // {
+            //     Print("Нет");
+            // }
+            // {
+            //     Print("Да");
+            // }
 
-        } 
+            firstDigit(Num);
+            static void firstDigit(int numberB)
+            {
+                if (numberB > 10000)
+                    numberB = numberB/10000 % 10;
+                Console.WriteLine(numberB);
+            }
+            
+            fiveDigit(Num);
+            static void fiveDigit(int numberA)
+            {
+                if (numberA > 10000)
+                    numberA = numberA / 1 % 10;
+                
+                Console.WriteLine(numberA);
+
+            }
+
+            secondDigit(Num);
+            static void secondDigit(int numberX)
+            {
+                if (numberX > 10000)
+                    numberX = numberX / 1000 % 10;
+                Console.WriteLine(numberX);
+            }
+
+            fourDigit(Num);
+            static void fourDigit(int numberY)
+            {
+                if (numberY > 10000)
+                    numberY = numberY / 10 % 10;
+                
+                Console.WriteLine(numberY);
+
+            }
+
+        
+
+            
+
+
+
+
+            
+            
+
+        }
 
     }
 
 }
+
