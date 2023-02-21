@@ -5,7 +5,6 @@ namespace homework
 {
     class Program
     {    
-        
         public static void Print(string word)
         {
             Console.WriteLine(word);
@@ -28,14 +27,13 @@ namespace homework
             int zb = Convert.ToInt32(Console.ReadLine());
             Print("Введите za");
             int za = Convert.ToInt32(Console.ReadLine());
-               
-
-             Double AB = Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya,2) + Math.Pow(zb - za, 2));
-             System.Console.WriteLine(AB);
-              
+            
+            Double AB = Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya,2) + Math.Pow(zb - za, 2));
+              System.Console.WriteLine(AB);
+             
         }
-        
-
+        // A (3,6,8); B (2,1,-7), -> 15.84
+        // A (7,-5, 0); B (1,-1,9) -> 11.53
     }
 
 }
